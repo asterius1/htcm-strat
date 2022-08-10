@@ -9,21 +9,18 @@ export const Section = component$(() => {
         haha
       </div> */}
     </div>
-  )
-})
+  );
+});
 
 export default component$(() => {
   return (
     <Host>
-
       Welcome to this simple guide for HT CM <br />
       It's short and fun and I hope you like it
-
       <Section>
         <h1 class="text-2xl font-bold">Jormag</h1>
         Hello!
       </Section>
-
       <Section>
         <h1 class="text-2xl font-bold">Primordus</h1>
         Hello!

@@ -1,0 +1,4 @@
+body {
+  background: theme(colors.neutral.900);
+  color: theme(colors.white);
+}
