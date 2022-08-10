@@ -41,5 +41,8 @@
   "homepage": "https://qwik.builder.io/",
   "license": "",
   "private": true,
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "daisyui": "^2.22.0"
+  }
 }
