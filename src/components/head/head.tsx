@@ -10,6 +10,7 @@ export const Head = component$(
 
     return (
       <>
+        <meta name="viewport" content="width=device-width"/>
         <meta charSet="utf-8" />
 
         <title>{head.title ? `${head.title} - Qwik` : `Qwik`}</title>

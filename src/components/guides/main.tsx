@@ -1,14 +1,7 @@
 import { component$, Host } from "@builder.io/qwik";
-import {
-  Section,
-  SpecificTips,
-  TipBox,
-  useTipSelectionContextProvider,
-} from "./elements";
+import { Section, SpecificTips, TipBox } from "./elements";
 
 export const MainGuide = component$(() => {
-  useTipSelectionContextProvider();
-
   return (
     <Host>
       Welcome to this simple guide for HT CM <br />

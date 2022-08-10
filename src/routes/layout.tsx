@@ -1,4 +1,5 @@
 import { component$, Host, Slot, useStyles$ } from "@builder.io/qwik";
+import { useTipSelectionContextProvider } from "~/components/guides/elements";
 import style from "./layout.css";
 
 export const Header = () => {
@@ -11,6 +12,7 @@ export const Footer = () => {
 
 export default component$(() => {
   useStyles$(style);
+  useTipSelectionContextProvider();
   return (
     <Host>
       <Header />
