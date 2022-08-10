@@ -10,10 +10,14 @@ export const Head = component$(
 
     return (
       <>
-        <meta name="viewport" content="width=device-width"/>
+        <meta name="viewport" content="width=device-width" />
         <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="Guide for Harvest Temple Challenge Mode in Guild Wars 2"
+        />
 
-        <title>{head.title ? `${head.title} - Qwik` : `Qwik`}</title>
+        <title>{head.title ? `${head.title}` : `HT CM`}</title>
 
         <link rel="canonical" href={loc.href} />
 
