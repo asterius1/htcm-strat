@@ -2,20 +2,20 @@
 # yarn lockfile v1
 
 
-"@builder.io/qwik-city@^0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@builder.io/qwik-city/-/qwik-city-0.0.32.tgz#8759c9d0448a208aee6e165ad397661bc9d95e79"
-  integrity sha512-RT5j7Du4KVrDyA3Poh5Q2qiedP5eI456O9Z47OWrsfAmSwvgomftq2Gz3qIpBZ+Vlzcn5Z/pC7q5qybZ2LWRzA==
+"@builder.io/qwik-city@^0.0.101":
+  version "0.0.101"
+  resolved "https://registry.yarnpkg.com/@builder.io/qwik-city/-/qwik-city-0.0.101.tgz#7c65608ab82e8eee868f22eedc6dc853a16905b2"
+  integrity sha512-/9NyIfKcSBUljRzv30JTLhN0L8pprgEm5idAJbgVQxaf2ssM/gfI5qL4U+svBaF+YQ79iMPbbonwWUaE4HW2Bg==
   dependencies:
     "@mdx-js/mdx" "2.1.2"
     "@types/mdx" "2.0.2"
     source-map "0.7.4"
     vfile "5.3.4"
 
-"@builder.io/qwik@0.0.41":
-  version "0.0.41"
-  resolved "https://registry.yarnpkg.com/@builder.io/qwik/-/qwik-0.0.41.tgz#ebc60f1f2b723dec6b3ef72112eb97217ed45038"
-  integrity sha512-TbZxRmJsxRW2IlbGux4pQ6ElUrOJiv/uzdcJZOpQXd0FPHooXrEW7WO0gUuBPTytiEv3mARX39zTw3HDZijEeA==
+"@builder.io/qwik@^0.0.100":
+  version "0.0.100"
+  resolved "https://registry.yarnpkg.com/@builder.io/qwik/-/qwik-0.0.100.tgz#a6fade4dbc1b2eb146f8f29cc97c0ba9e727dfc5"
+  integrity sha512-q/9dhBRHZ8oXHaBUwljVa2RRKR/3dLzTcwA89oUd57uipndS8FMjVeBff/QFrhNYYTx5BLgcfjreEJKnrcZIRQ==
 
 "@cloudflare/kv-asset-handler@^0.2.0":
   version "0.2.0"

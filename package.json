@@ -17,8 +17,8 @@
     "typecheck": "tsc --incremental --noEmit"
   },
   "devDependencies": {
-    "@builder.io/qwik": "0.0.41",
-    "@builder.io/qwik-city": "^0.0.32",
+    "@builder.io/qwik": "^0.0.100",
+    "@builder.io/qwik-city": "^0.0.101",
     "@types/eslint": "8.4.5",
     "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "5.30.7",

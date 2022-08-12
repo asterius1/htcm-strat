@@ -1,7 +1,6 @@
 import {
   component$,
   createContext,
-  Host,
   Slot,
   useContext,
   useContextProvider,
@@ -54,12 +53,10 @@ export function useTipSelectionContextProvider() {
 
 export const TipBox = component$(() => {
   return (
-    <Host>
-      <div class="rounded-lg my-4">
-        <SelectTip />
-        <Slot />
-      </div>
-    </Host>
+    <div class="rounded-lg my-4">
+      <SelectTip />
+      <Slot />
+    </div>
   );
 });
 
@@ -67,41 +64,39 @@ export const SelectTip = component$(() => {
   const selected = useContext(TipSelectionContext);
 
   return (
-    <Host>
-      <div class="bg-slate-800">
-        <div>
-          {classChoiceNew.map((c) => {
+    <div class="bg-slate-800">
+      <div>
+        {classChoiceNew.map((c) => {
+          return (
+            <button
+              class="btn btn-primary btn-md"
+              disabled={selected._class === c.name}
+              onClick$={() => {
+                selected._class = c.name;
+                selected.role = c.roles[0];
+              }}
+            >
+              {c.name}
+            </button>
+          );
+        })}
+      </div>
+      <div>
+        {classChoiceNew
+          .filter((a) => a.name === selected._class)[0]
+          ?.roles.map((r) => {
             return (
               <button
-                class="btn btn-primary btn-md"
-                disabled={selected._class === c.name}
-                onClick$={() => {
-                  selected._class = c.name;
-                  selected.role = c.roles[0];
-                }}
+                class="btn btn-secondary btn-md"
+                disabled={selected.role === r}
+                onClick$={() => (selected.role = r)}
               >
-                {c.name}
+                {r}
               </button>
             );
           })}
-        </div>
-        <div>
-          {classChoiceNew
-            .filter((a) => a.name === selected._class)[0]
-            ?.roles.map((r) => {
-              return (
-                <button
-                  class="btn btn-secondary btn-md"
-                  disabled={selected.role === r}
-                  onClick$={() => (selected.role = r)}
-                >
-                  {r}
-                </button>
-              );
-            })}
-        </div>
       </div>
-    </Host>
+    </div>
   );
 });
 
@@ -112,14 +107,12 @@ export const SpecificTips = component$(
     const rMatch = role === undefined || selected.role === role;
     if (cMatch && rMatch) {
       return (
-        <Host>
-          <div class="bg-neutral-700 p-4">
-            <p class="font-bold">
-              tips for {_class} {role}
-            </p>
-            <Slot />
-          </div>
-        </Host>
+        <div class="bg-neutral-700 p-4">
+          <p class="font-bold">
+            tips for {_class} {role}
+          </p>
+          <Slot />
+        </div>
       );
     } else {
       return <></>;

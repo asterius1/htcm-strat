@@ -1,9 +1,9 @@
-import { component$, Host } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import { Section, SpecificTips, TipBox } from "./elements";
 
 export const MainGuide = component$(() => {
   return (
-    <Host>
+    <div>
       Welcome to this simple guide for HT CM <br />
       It's short and fun and I hope you like it
       <Section>
@@ -26,6 +26,6 @@ export const MainGuide = component$(() => {
           <SpecificTips role="dps">tips for dps</SpecificTips>
         </TipBox>
       </Section>
-    </Host>
+    </div>
   );
 });
