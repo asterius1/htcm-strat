@@ -12,7 +12,7 @@ export const MainGuide = component$(() => {
       </Section>
       <Section>
         <h1 class="text-2xl font-bold">Primordus</h1>
-        Hello!
+        Hello! test change!
         <TipBox>
           <SpecificTips _class="ham" role="heal">
             tips for ham
